@@ -45,7 +45,7 @@ $tempColumns = array (
                     $extRelPath . 'Resources/Public/Icons/dummy_ca.gif'
                 ),
             ),
-            'itemsProcFunc' => 'JWeiland\\RlmpTmplselector\\Tca\\AddFilesToSelCa->main',
+            'itemsProcFunc' => 'JWeiland\\RlmpTmplselector\\Tca\\AddFilesToSelCa->main','','before:newUntil'
         ),
     ),
 );
@@ -53,5 +53,5 @@ $tempColumns = array (
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $tempColumns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    'tx_rlmptmplselector_main_tmpl;;;;1-1-1, tx_rlmptmplselector_ca_tmpl'
+    'tx_rlmptmplselector_main_tmpl;;;;1-1-1, tx_rlmptmplselector_ca_tmpl','','before:newUntil'
 );
